@@ -66,7 +66,6 @@ jobs:
       - name: Use git clone CLI
         run: |
           #gcloud info
-          #echo "gcloud"
           #gcloud compute instances list
           git clone https://github.com/sylvialin/docker-openresty.git 
           gcloud compute --project "stellar-display-330307" scp --recurse docker-openresty instance-1:~/ \
