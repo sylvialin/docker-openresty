@@ -33,7 +33,7 @@ jobs:
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
       - name: Post to a Slack channel
-        id: slack
+        id: slackl
         uses: slackapi/slack-github-action@v1.18.0
         with:
           # Slack channel id, channel name, or user id to post message.
