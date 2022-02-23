@@ -37,7 +37,7 @@ jobs:
       - id: 'auth'
         uses: 'google-github-actions/auth@v0'
         with:
-          workload_identity_provider: 'projects/stellar-display-330307/locations/global/workloadIdentityPools/gactions/providers/gactions'
+          #workload_identity_provider: 'projects/stellar-display-330307/locations/global/workloadIdentityPools/gactions/providers/gactions'
           service_account: 'github-actions@stellar-display-330307.iam.gserviceaccount.com'
         
       # Runs a single command using Cloud SDK
