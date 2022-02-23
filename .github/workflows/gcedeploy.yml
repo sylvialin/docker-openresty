@@ -63,11 +63,14 @@ jobs:
           export_default_credentials: true
 
       # Runs a set of commands using the runners shell
-      - name: Use gcloud CLI
+      - name: Use git clone CLI
         run: |
-          gcloud info
-          echo "gcloud"
-          gcloud compute instances list
+          #gcloud info
+          #echo "gcloud"
+          #gcloud compute instances list
+          git clone https://github.com/sylvialin/docker-openresty.git 
+          gcloud compute --project "stellar-display-330307" scp --recurse docker-openresty instance-1:/home/slin22059 \
+          --zone "us-central1-b"
           
       - name: Post to a Slack channel
         id: slack
