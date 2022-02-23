@@ -69,7 +69,7 @@ jobs:
           #echo "gcloud"
           #gcloud compute instances list
           git clone https://github.com/sylvialin/docker-openresty.git 
-          gcloud compute --project "stellar-display-330307" scp --recurse docker-openresty instance-1:/home/slin22059 \
+          gcloud compute --project "stellar-display-330307" scp --recurse docker-openresty instance-1:~/ \
           --zone "us-central1-b"
           
       - name: Post to a Slack channel
