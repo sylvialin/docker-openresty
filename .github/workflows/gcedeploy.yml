@@ -45,10 +45,10 @@ jobs:
       # Runs a single command using Cloud SDK
       - name: Set up Cloud SDK
         uses: google-github-actions/setup-gcloud@v0
-        #with:
-        #  project_id: ${{ secrets.GCP_PROJECT_ID }}
+        with:
+          project_id: ${{ secrets.GCP_PROJECT_ID }}
         #  service_account_key: ${{ secrets.GCP_SA_KEY }}
-        #  export_default_credentials: true
+          export_default_credentials: true
 
       # Runs a set of commands using the runners shell
       - name: Use gcloud CLI
